@@ -5,7 +5,7 @@
     <ProductVersion>3.0</ProductVersion>
     <ProjectGuid>{007b0d76-ea1d-4d75-a55c-225635c7f7f8}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>Pankh OCR Engine</OutputName>
+    <OutputName>Pankh ComOCR Engine</OutputName>
     <OutputType>Package</OutputType>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
@@ -13,24 +13,24 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Engine\Installer\</OutputPath>
-    <IntermediateOutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Installer\Interim\</IntermediateOutputPath>
+    <IntermediateOutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Engine\Installer\Interim\</IntermediateOutputPath>
     <DefineConstants>Debug</DefineConstants>
     <SuppressIces>ICE69</SuppressIces>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Engine\Installer\</OutputPath>
-    <IntermediateOutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Installer\Interim\</IntermediateOutputPath>
+    <IntermediateOutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Engine\Installer\Interim\</IntermediateOutputPath>
     <SuppressIces>ICE69</SuppressIces>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
     <DefineConstants>Debug</DefineConstants>
     <OutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Engine\Installer\</OutputPath>
-    <IntermediateOutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Installer\Interim\</IntermediateOutputPath>
+    <IntermediateOutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Engine\Installer\Interim\</IntermediateOutputPath>
     <SuppressIces>ICE69</SuppressIces>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
     <OutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Engine\Installer\</OutputPath>
-    <IntermediateOutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Installer\Interim\</IntermediateOutputPath>
+    <IntermediateOutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\Engine\Installer\Interim\</IntermediateOutputPath>
     <SuppressIces>ICE69</SuppressIces>
   </PropertyGroup>
   <ItemGroup>
