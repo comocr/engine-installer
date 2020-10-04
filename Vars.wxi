@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Include>
+  
+  <?define Engine.IconFileName=..\Resource\Engine.ico ?>
+  <?define ENGINE_REG_LM.GUID = '85035846-A2D4-4A74-BD7F-028D7BA0786D'?>
+  <?define OAF_FILE_REG.GUID = 'F33B1BB7-AA8E-4985-9267-AF96693DA956' ?>
+  <?define Engine.KeyPath = 'Software\[Manufacturer]\OCR\Engine'?>
+  <?define Engine.SplashFileName=..\Resource\Splash.bmp ?>
+  
+  <?if $(var.Platform)=x64 ?>
+  
+  <?define ProgramFiles.Dir=ProgramFiles64Folder?>
+  <?define Engine.TargetFileName=..\..\x64\Release\Engine\Engine\Engine.exe ?>
+  <?define Res409.TargetFileName=..\..\x64\Release\Engine\Lang\Res409\Res409.DLL.mui ?>
+  <?define Res439.TargetFileName=..\..\x64\Release\Engine\Lang\Res439\Res439.DLL.mui ?>
+  <?define Res44B.TargetFileName=..\..\x64\Release\Engine\Lang\Res44B\Res44B.DLL.mui ?>
+  <?define Res461.TargetFileName=..\..\x64\Release\Engine\Lang\Res461\Res461.DLL.mui ?>
+  
+  <?define Product.GUID = '0C5481C6-D642-4166-9578-865FCEE8F875' ?>
+  <?define Upgrade.GUID = '7A77F560-B399-4CF6-882C-07E5B105685D' ?>
+  <?define EngineExecutable.GUID = 'FBF52074-87C0-4583-B79A-A2A68AF24A08' ?>
+  <?define LanguageEnglish.GUID = 'F2D4F517-F1F6-4445-AE73-2C9D21E218B3' ?>
+  <?define LanguageHindi.GUID = '6ADBD501-5872-4A17-BC60-9DBE94D7AE0C' ?>
+  <?define LanguageKannada.GUID = '1F8E6E00-807F-40EC-941C-4C49AE3992FF' ?>
+  <?define LanguageNepali.GUID = 'CFF8FEEE-A7C2-42B6-A758-06073E8A9C2D' ?>
+  <?define ProgramMenuDir.GUID = 'E77A9B84-BA10-4ADE-9DA0-5BBB65692C0F' ?>
+  <?define EngineProgramMenuShortcut.GUID = 'B443DBB8-551A-4C85-B631-E990D848C261' ?>
+  <?define ProgramMenuEngine.GUID = '86D8F10E-4AE6-402B-8824-7C2BA7E4BEDA' ?>
+  <?define EngineDesktopShortcut.GUID = 'CBD21A24-30D6-4317-A157-631122F580A8' ?>
+
+  <?else ?>
+
+  <?define ProgramFiles.Dir=ProgramFilesFolder?>
+  <?define Engine.TargetFileName=..\..\x86\Release\Engine\Engine.exe ?>
+  <?define Res409.TargetFileName=..\..\x86\Release\Engine\Lang\Res409\Res409.DLL.mui ?>
+  <?define Res439.TargetFileName=..\..\x86\Release\Engine\Lang\Res439\Res439.DLL.mui ?>
+  <?define Res44B.TargetFileName=..\..\x86\Release\Engine\Lang\Res44B\Res44B.DLL.mui ?>
+  <?define Res461.TargetFileName=..\..\x86\Release\Engine\Lang\Res461\Res461.DLL.mui ?>
+
+  <?define Product.GUID = 'D2D3F5A2-D5E2-4A5E-80A3-984E5D141A68' ?>
+  <?define Upgrade.GUID = '993CCB14-464E-4ABE-8E82-B1A9627BE214' ?>
+  <?define EngineExecutable.GUID = '736E400E-FA0A-4CA9-AA87-0ED52705A288' ?>
+  <?define LanguageEnglish.GUID = 'A46CD049-8048-44FA-9664-93F7F6CA6473' ?>
+  <?define LanguageHindi.GUID = 'F6CBA231-4A51-4B22-AE9D-69B7A7653831' ?>
+  <?define LanguageKannada.GUID = 'F2D4F062-AF11-4B4B-8498-E290322E34FB' ?>
+  <?define LanguageNepali.GUID = '8322D903-5CE4-4E43-A39C-F40735ED81B7' ?>
+  <?define ProgramMenuDir.GUID = '4D79C603-1C99-43EB-AAAE-8E36003D1060' ?>
+  <?define EngineProgramMenuShortcut.GUID = '4B3D636A-3165-4C4E-8EDC-1086B53A9CDB' ?>
+  <?define ProgramMenuEngine.GUID = '9672B475-DDD1-496D-8794-939A7C512FDF' ?>
+  <?define EngineDesktopShortcut.GUID = 'B6982A3D-90EC-4BFF-B1E9-406EF28D7027' ?>
+  
+  <?endif?>
+  
+</Include>
